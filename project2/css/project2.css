@@ -1,0 +1,494 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+*, *::after, *::before{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+/* header section start */
+header {
+	width: 100%;
+	background: linear-gradient(70deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));
+	position: fixed;
+	z-index: 99;
+}
+.header{
+	display: flex;
+	align-items: center;
+    justify-content: space-around;
+}
+.nav ul{
+	margin: 0;
+	padding: 0;
+}
+.nav ul li{
+	display: inline-block;
+	list-style-type: none;
+}
+.nav a {
+	display: block;
+	padding: 25px 20px;
+	transition: all 0.7s ease-in-out;
+}
+
+.nav a:hover {
+	background-color: #7fb400;
+	color: white;
+}
+/* header section end  */
+ /* banner section  start */
+ .banner{
+ 	padding: 250px 0;
+ 	background: url('../images/slider1.jpg') no-repeat center center/cover;
+ }
+ .banner_con{
+ 	text-align: center;
+ }
+ .banner_con h1{
+ 	    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+ .banner_con p{
+ 	color: white;
+ 	font-size: 18px;
+}
+
+/* banner section end */
+/* sectoin our res start */
+.about{
+	padding: 60px;
+
+}	
+.full_a{
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+}
+.a-image {
+	width: 50%;
+}
+.about_img{
+	width: 90%;
+}
+.about_img img {
+	outline: 2px solid white;
+	outline-offset: -10px;
+	width: 100%;
+}
+
+.about_con {
+	display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about_con h2{
+	color: grey;
+	position: relative;
+}
+.about_con h2::after{
+	content: "";
+	position: absolute;
+	width: 20%;
+	height: 3px;
+	background-color: green;
+	left: 0;
+	bottom: -10px;
+}
+.about_con p{
+	color: grey;
+	text-align: justify;
+}
+ /* sectoin our res end  */
+/* sectoin our gallery start  */
+.gallery{
+margin: 40px 0;
+}
+.gallery_con{
+	display: flex;
+	justify-content: center;
+
+}
+.gallery_con h2 {
+	     padding-bottom: 46px;
+	color: grey;
+	position: relative;
+
+}
+.gallery_con h2::after{
+	 content: "";
+    position: absolute;
+    width: 55%;
+    height: 3px;
+    background-color: #7fb400;
+    left: 43px;
+    bottom: 37px;
+}
+.gallery_i{
+	width: 100%;
+	/* float: left; */
+	display: flex;
+   flex-wrap: wrap;
+}
+.gallery_img{
+	width: 25%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.gallery_img img{
+	width: 100%;
+	
+}
+
+ /* sectoin our gallery end  */
+ 	/* section our menu start */
+.menu{
+	    margin: 40px ;
+
+}
+ .full_menu{
+	width: 70%;
+	margin: 0 auto;
+
+ }
+ .menu_main{
+ 	width: 100%;
+
+ 	text-align: center;
+ 
+ }
+  .menu_main h2{
+	        padding-bottom: 25px;
+	    color: grey;
+	position: relative;
+}
+
+.menu_main h2::after{
+	 content: "";
+    position: absolute;
+    width: 10%;
+    height: 3px;
+    background-color: #7fb400;
+    left: 451px;
+    bottom: 14px;
+}
+.menu_main a{
+      padding: 6px 20px;
+    border: 1px solid grey;
+    margin-bottom: 29px; km                                                                                                                                                          
+    margin-left: 11px;
+    display: inline-block;
+    transition: all 0.4s ease-in-out;
+    outline: 2px solid white;
+	outline-offset: -5px;
+	}
+.menu_main a:hover{
+	background-color: #7fb400;
+	color: white;
+	/* font-weight: bold; */
+	
+}
+.menu_sub{
+	display: flex;
+	width: 100%;
+}
+.menu_text{
+ width: 50%;
+}
+.menu_text p{
+	margin: 5px;
+}
+span{
+	color: #7fb400;
+}
+.menu_p{
+	color: grey;
+	}
+	/* section our menu end */
+	/* section reservation start */
+.reservation{
+	margin-top: 20px;
+		padding: 70px 0;
+ 	background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/table_banner.jpg') no-repeat center center/cover;
+ 	/* filter: brightness(0.40); */
+
+	}
+.reservation_con{
+	width: 70%;
+	margin: 0 auto;
+}
+.reservation_con h2{
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	color:white;
+	margin-bottom: 51px;
+	position: relative;	
+}
+.reservation_con h2::after{
+	 content: "";
+    position: absolute;
+    width: 10%;
+    height: 3px;
+    background-color: #7fb400;
+    left: 475px;
+    bottom: -10px;
+ }
+.reservation_2{
+	width: 50%;
+	float: left;
+}
+.reservation_con input{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 496px;
+    height: 38px;
+    margin-bottom: 21px;
+    border: 1px solid white;
+    outline: none;
+    padding: 10px;
+    font-weight: bold;
+}
+.reservation_con textarea{
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid white;
+	outline: none;
+}
+input[type=date]::-webkit-datetime-edit-text {
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-month-field{
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-day-field {
+    -webkit-appearance: none;
+    display: none;
+}
+input[type=date]::-webkit-datetime-edit-year-field {
+    -webkit-appearance: none;
+    display: none;
+}
+.reservation_con h5{
+	color: white;
+	font-size: 18px
+}
+.reservation_con button{
+	display: inline-block;
+	text-align: center;
+	    background-color: #7fb400;
+    font-weight: bold;
+    color: white;
+    padding: 8px;
+    margin-top: 6px;
+    font-size: 14px;
+}
+.reservation_button{
+	display: inline-block;
+	    padding: 0 40.5%;
+
+}
+.reservation_button button{
+ transition: all 0.5s ease-in-out;
+}
+.reservation_button button:hover{
+	background-color: white;
+	color: black;
+
+}
+
+	/* section reservation end */
+	/* section contact us start */
+.contact_us{
+	 background-color: #f6f6f6;
+	 padding-bottom: 20px;
+}
+.contact_main{
+	 width: 70%;
+	 margin: 0 auto;
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;	
+}
+
+.contact_head h2{
+	text-align: center;
+		color: grey;
+	position: relative;
+	    padding: 25px 0;
+}
+
+.contact_head h2::after{
+	content: "";
+    position: absolute;
+    width: 20%;
+    height: 3px;
+    background-color: green;
+    left: 155px;
+    bottom: 14px;
+}
+.contact_head p{
+	margin-bottom: 25px;
+}
+
+.contact_text input{
+	width: 440px;
+    padding: 10px; 
+    margin-bottom: 10px;
+}
+
+.contact_text textarea{
+ padding-bottom: 107px;
+}
+
+.contact_button {
+	padding: 0px 388px;
+	margin-top: 10px;
+}
+.contact_button button{
+	padding: 8px 11px;
+	transition: all 0.5s ease-in-out;
+	border: none;
+	color: white;
+	background-color: #7fb400;
+}
+
+.contact_button button:hover{
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+}
+
+	/* section contact us end */
+	/* section map start */
+	/* section map end */
+	/* section restaurant start */
+.restaurant{
+	 background-color: #f6f6f6;
+	 padding: 45px 0;
+
+}
+.restaurant_icon p{
+	    margin: 20px 0;
+}
+.r_img{
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.full_restaurant{
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+}
+.r1{
+	width: 25%;
+	display: flex;
+}
+.res_icon{
+	display: flex;
+	gap: 8px;
+}
+.res_in{
+	/* display:inline-block; */
+	border-radius: 50%;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	width: 40px;
+
+}
+/* .contact_1{
+	width: 25%;
+} */
+
+h3{
+    position: relative;
+    padding-left: 56px;
+    font-size: 28px;
+    color: grey;
+    font-weight: bold;
+}
+h3::after{
+    content: "";
+    background-color: green;
+    position: absolute;
+    width: 37px;
+    height: 3px;
+    left: 10px;
+    bottom: 14px;
+}
+.c_11{
+	display: flex;
+}
+.c_1{
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.c_p p{
+	padding: 16px;
+}
+.fa-map-marked-alt{
+    display: inline-block;
+    font-size: 32px;
+    color: green;
+}
+.fa-business-time{
+	display: inline-block;
+    font-size: 32px;
+    color: green;
+}
+.fa-envelope-open-text{
+    display: inline-block;
+    font-size: 32px;
+    color: green;
+}
+.fa-phone{
+	display: inline-block;
+    font-size: 32px;
+    color: green;
+}
+
+
+.insta_img{
+	display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+}
+
+.insta_i{
+	margin: -6px
+}
+.facebook{
+	display: flex;
+	flex-direction: column;
+}
+
+
+	/* section restaurant end */
+	/* footer start */
+.footer{
+	padding: 25px 0;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	font-weight: bold;
+	background-color: #7fb400;
+}
+	/* footer end */
+
+
